@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Downloads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+        .download-list {
+            list-style: none;
+            padding: 0;
+        }
+        .download-list li {
+            margin: 15px 0;
+        }
+        .download-list a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .download-list a:hover {
+            color: #0056b3;
+        }
+        .download-list a i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .icon-zip {
+            color: #d9534f;
+        }
+        .icon-pdf {
+            color: #ff0000;
+        }
+        .icon-doc {
+            color: #5bc0de;
+        }
+    </style>
+</head>
+<body>
+    <h1>Download Center</h1>
+    <ul class="download-list">
+        <li><a href="files/file1.zip" download><i class="icon-zip">📦</i>File 1 (ZIP)</a></li>
+        <li><a href="files/file2.pdf" download><i class="icon-pdf">📄</i>File 2 (PDF)</a></li>
+        <li><a href="files/file3.docx" download><i class="icon-doc">📃</i>File 3 (DOCX)</a></li>
+    </ul>
+</body>
+</html>
